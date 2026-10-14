@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-mode="static">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صلاح الدين الأيوبي | سِيَر</title>
+<meta name="description" content="يوسف بن أيوب، وُلد في تكريت لأسرة كردية. تولّى وزارة مصر ثم أنهى الدولة الفاطمية ووحّد مصر والشام. هزم الصليبيين في حطّين سنة ٥٨٣ هـ وحرّر بيت المقدس، وصمد في…">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0f19">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://siyar.pages.dev/c/saladin">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="سِيَر">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:title" content="صلاح الدين الأيوبي — محرّر بيت المقدس">
+<meta property="og:description" content="يوسف بن أيوب، وُلد في تكريت لأسرة كردية. تولّى وزارة مصر ثم أنهى الدولة الفاطمية ووحّد مصر والشام. هزم الصليبيين في حطّين سنة ٥٨٣ هـ وحرّر بيت المقدس، وصمد في…">
+<meta property="og:url" content="https://siyar.pages.dev/c/saladin">
+<meta property="og:image" content="https://siyar.pages.dev/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="سِيَر: بطاقات التاريخ الإسلامي والشخصيات">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="صلاح الدين الأيوبي — محرّر بيت المقدس">
+<meta name="twitter:description" content="يوسف بن أيوب، وُلد في تكريت لأسرة كردية. تولّى وزارة مصر ثم أنهى الدولة الفاطمية ووحّد مصر والشام. هزم الصليبيين في حطّين سنة ٥٨٣ هـ وحرّر بيت المقدس، وصمد في…">
+<meta name="twitter:image" content="https://siyar.pages.dev/og-default.png">
+</head>
+<body>
+
+<!-- ============ الواجهة العامة ============ -->
+<div id="publicApp">
+<header class="site-header">
+  <div class="wrap">
+    <a href="#home" class="logo" aria-label="سِيَر - الرئيسية"><div class="logo-mark">☪</div><div>سِ<span class="g">يَ</span>ر</div></a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="#home" data-sec="home" class="active">الرئيسية</a>
+      <a href="#figures" data-sec="figures">الشخصيات</a>
+      <a href="#stances" data-sec="stances">المواقف</a>
+      <a href="#seerah" data-sec="seerah">السيرة النبوية</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <span class="eyebrow">بطاقات التاريخ الإسلامي</span>
+      <h1>اقرأ <em>السِّيَر</em> في بطاقات<br>تُقرّبك من صُنّاع التاريخ</h1>
+      <p class="lead">ابحث عن شخصية أو موقف، وتصفّح الحقب التاريخية، ثم افتح الملف الكامل لكل بطاقة بنشأتها وبطولاتها وما ورد فيها من أحاديث ونصوص.</p>
+      <div class="search">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" type="search" placeholder="ابحث بالاسم أو اللقب أو محتوى النبذة…" autocomplete="off" aria-label="بحث">
+        <button class="clear" id="clear" aria-label="مسح البحث" type="button">✕</button>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="تصفية حسب الحقبة"></div>
+      <div class="result-info" id="resultInfo" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="block" id="figures">
+    <div class="wrap">
+      <div class="sec-head"><h2>الشخصيات</h2><span class="count" id="figCount">0</span><div class="bar"></div></div>
+      <div class="grid" id="figGrid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="stances">
+    <div class="wrap">
+      <div class="sec-head"><h2>المواقف التاريخية</h2><span class="count" id="stCount">0</span><div class="bar"></div></div>
+      <div class="grid" id="stGrid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="seerah">
+    <div class="wrap">
+      <div class="sec-head"><h2>السيرة النبوية</h2><span class="count" id="srCount">0</span><div class="bar"></div></div>
+      <div class="grid" id="srGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><nav class="foot-nav" aria-label="روابط الموقع"><a href="/about">عن المنصة</a><a href="/privacy">سياسة الخصوصية</a><a href="/contact">التواصل</a></nav><div>سِيَر <span class="g">•</span> محتوى تعليمي — يُرجى مراجعة المصادر الأصلية للاستشهاد العلمي.</div></div></footer>
+</div>
+
+<!-- ============ بوابة الإدارة ============ -->
+<div id="adminApp" hidden></div>
+
+<!-- نافذة العرض -->
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mName" id="modal"></div>
+</div>
+<!-- نافذة التأكيد -->
+<div class="overlay" id="confirmOverlay" aria-hidden="true">
+  <div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="cTitle" id="confirmBox"></div>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="/data.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
